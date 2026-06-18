@@ -1,0 +1,51 @@
+{
+  "dataset_version": "squid_v2",
+  "raw_classes": [
+    "benign",
+    "deimos_download",
+    "deimos_keylog",
+    "deimos_recon",
+    "deimos_screenshot",
+    "deimos_shell",
+    "deimos_upload",
+    "merlin_download",
+    "merlin_keylog",
+    "merlin_recon",
+    "merlin_screenshot",
+    "merlin_shell",
+    "merlin_upload",
+    "sliver_download",
+    "sliver_keylog",
+    "sliver_recon",
+    "sliver_screenshot",
+    "sliver_shell",
+    "sliver_upload"
+  ],
+  "stage1_classes": [
+    "benign",
+    "merlin",
+    "deimos",
+    "sliver"
+  ],
+  "stage2_classes": [
+    "deimos_download",
+    "deimos_keylog",
+    "deimos_recon",
+    "deimos_screenshot",
+    "deimos_shell",
+    "deimos_upload",
+    "merlin_download",
+    "merlin_keylog",
+    "merlin_recon",
+    "merlin_screenshot",
+    "merlin_shell",
+    "merlin_upload",
+    "sliver_download",
+    "sliver_keylog",
+    "sliver_recon",
+    "sliver_screenshot",
+    "sliver_shell",
+    "sliver_upload"
+  ],
+  "dataset_scope": "The demo includes a subset of the full dataset."
+}

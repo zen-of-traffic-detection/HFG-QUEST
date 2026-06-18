@@ -1,0 +1,141 @@
+{
+  "experiment": {
+    "name": "hfg_quest_demo_cache_only_structure_focused",
+    "dataset_version": "squid_v2"
+  },
+  "paths": {
+    "preprocess_dir": "preprocessed/v2",
+    "runs_dir": "runs/v2",
+    "cache_inventory": "config/cache_inventory.json"
+  },
+  "preprocess": {
+    "n_packets": 40,
+    "stage1_n_packets": 40,
+    "stage2_n_packets": 140,
+    "stage2_packet_offset": 0,
+    "cache_n_packets": 210,
+    "workers": 24,
+    "max_samples_per_class": null,
+    "stage2_awm_source_offset": 10,
+    "stage2_awm_source_n_packets": 200,
+    "stage1_packet_offset": 10,
+    "max_samples_by_class": {},
+    "cache_only": true,
+    "cache_only_hb_key": "8491b3f8d3",
+    "cache_only_awm_key": "bb3f916ba9"
+  },
+  "heartbeat": {
+    "weights": {
+      "alpha": 0.5,
+      "beta": 0.35,
+      "gamma": 0.15
+    },
+    "percentile_threshold": 80.0,
+    "size": {
+      "q25": 25.0,
+      "q75": 75.0,
+      "small_candidate_percentile": 30.0,
+      "mad_multiplier": 2.0
+    },
+    "rhythm": {
+      "max_order": 5,
+      "min_period": 0.2,
+      "max_period": 120.0,
+      "epsilon_ratio": 0.15,
+      "epsilon_mad_multiplier": 3.0
+    },
+    "direction": {
+      "c2s_score": 1.0,
+      "s2c_score": 0.1
+    }
+  },
+  "awm_kws": {
+    "enabled": true,
+    "win_len": 80,
+    "overlap": 0.5,
+    "tail_k": 3,
+    "L_min": 4,
+    "score_percentile": 60.0,
+    "weights": [
+      0.1,
+      0.35,
+      0.35,
+      0.2
+    ]
+  },
+  "training": {
+    "seed": 42,
+    "split": {
+      "test_size": 0.1,
+      "val_size": 0.0555556
+    },
+    "oversampling": {
+      "enabled": true,
+      "strategy": "duplicate_to_max"
+    },
+    "stage1": {
+      "batch_size": 32,
+      "epochs": 40,
+      "lr": 0.001
+    },
+    "stage2": {
+      "batch_size": 32,
+      "epochs": 180,
+      "lr": 0.001,
+      "loss": "weighted_nll",
+      "checkpoint_metric": "val_macro_min_f1",
+      "checkpoint_macro_weight": 0.7,
+      "class_weight_power": 0.5,
+      "class_weight_source": "base_train",
+      "focal_gamma": 2.0,
+      "augmentation": {
+        "enabled": true,
+        "seed_offset": 7000,
+        "variants_per_sample": 0,
+        "targets": {
+          "deimos_keylog": 3,
+          "deimos_screenshot": 1,
+          "merlin_keylog": 2,
+          "merlin_screenshot": 3,
+          "sliver_keylog": 2,
+          "sliver_recon": 2,
+          "sliver_screenshot": 0,
+          "sliver_shell": 0,
+          "sliver_upload": 0
+        },
+        "size_jitter": 0.05,
+        "dropout_prob": 0.015,
+        "duplicate_prob": 0.01,
+        "crop_max_ratio": 0.04,
+        "min_tokens": 12,
+        "max_augmented_per_class": null
+      }
+    }
+  },
+  "model": {
+    "stage1": {
+      "hidden_channels": 32,
+      "num_heads": 2,
+      "dropout_rate": 0.015
+    },
+    "stage2": {
+      "hidden_channels": 64,
+      "num_heads": 2,
+      "dropout_rate": 0.015
+    }
+  },
+  "stage2": {
+    "classifier": "tool_heads"
+  },
+  "features": {
+    "sequence_global": {
+      "enabled": false,
+      "size_clip": 1500.0
+    },
+    "graph_node": {
+      "size_transform": "log_signed",
+      "size_clip": 1500.0,
+      "normalize_index": true
+    }
+  }
+}

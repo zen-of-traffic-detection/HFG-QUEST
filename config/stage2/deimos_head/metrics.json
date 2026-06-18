@@ -1,0 +1,95 @@
+{
+  "accuracy": 0.9838492597577388,
+  "macro_precision": 0.9462759462759464,
+  "macro_recall": 0.9459459459459459,
+  "macro_f1": 0.9459064327485379,
+  "min_class_f1": 0.8333333333333334,
+  "class_metrics": {
+    "deimos_download": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 200
+    },
+    "deimos_keylog": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8108108108108109,
+      "f1": 0.8333333333333334,
+      "support": 37
+    },
+    "deimos_recon": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 67
+    },
+    "deimos_screenshot": {
+      "precision": 0.8205128205128205,
+      "recall": 0.8648648648648649,
+      "f1": 0.8421052631578947,
+      "support": 37
+    },
+    "deimos_shell": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 202
+    },
+    "deimos_upload": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 200
+    }
+  },
+  "confusion_matrix": [
+    [
+      200,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      30,
+      0,
+      7,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      67,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      32,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      202,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      200
+    ]
+  ]
+}

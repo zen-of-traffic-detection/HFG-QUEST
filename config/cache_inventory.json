@@ -1,0 +1,173 @@
+{
+  "dataset_name": "SQUID token cache for HFG-QUEST demo",
+  "dataset_version": "squid_v2",
+  "cache_only": true,
+  "contains_pcaps": false,
+  "contains_payloads": false,
+  "contains_ip_addresses": false,
+  "contains_ports": false,
+  "contains_timestamps": false,
+  "token_format": "one flow per line; signed packet-size tokens; '+' prefix marks heartbeat-selected packets in before_awm_kws",
+  "hb_key": "8491b3f8d3",
+  "awm_key": "bb3f916ba9",
+  "before_cache_dir": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws",
+  "after_cache_dir": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws",
+  "total_flows": 23824,
+  "total_cache_size_bytes": 46772947,
+  "classes": {
+    "benign": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/benign.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/benign_packets.txt",
+      "before_size_bytes": 5510680,
+      "after_size_bytes": 5254490,
+      "before_sha256": "36f83b1870bf73ba518c5dd3439023658822510306ee67adabfa0e353151095b",
+      "after_sha256": "8829457a9487b2e786c8fc90e16b6adc2d6eb66e2a5ce6dfe43f5729132c7f0c"
+    },
+    "deimos_download": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/deimos_download.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/deimos_download_packets.txt",
+      "before_size_bytes": 1852271,
+      "after_size_bytes": 1759590,
+      "before_sha256": "1263bd1bfef4a79c7f851a4a69931a75dcd00dc870d42b7602c941af09aacad6",
+      "after_sha256": "94656d204582db71fd2747d6a832920fc5637dd71e5c5600c127115132472949"
+    },
+    "deimos_keylog": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/deimos_keylog.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/deimos_keylog_packets.txt",
+      "before_size_bytes": 350243,
+      "after_size_bytes": 333207,
+      "before_sha256": "4c77cdface6b0ed0bf95cb5c179510328a2b55dff5369e0cccb5f408657b32b6",
+      "after_sha256": "43da471543b0ed2406204b933b2f24310d08863b36ecd8cd6e7163cecdd44d01"
+    },
+    "deimos_recon": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/deimos_recon.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/deimos_recon_packets.txt",
+      "before_size_bytes": 686966,
+      "after_size_bytes": 656157,
+      "before_sha256": "14f856743671c4b3eb5ae176a2d909ff5d6c6195cae52306c751b87fe09bc03f",
+      "after_sha256": "2a2c99bfeb3f802df27a8837befbe865bbc7e45674f7d728ed705e7be4a4c135"
+    },
+    "deimos_screenshot": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/deimos_screenshot.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/deimos_screenshot_packets.txt",
+      "before_size_bytes": 342106,
+      "after_size_bytes": 325407,
+      "before_sha256": "bdd4a60d597f8e8d25f503112f222fe50fc21c46d9ff1f45bf4564aa66ab5ff2",
+      "after_sha256": "4a8f2e9637bdcd620b365fed751de114d3fa9c7d4eb202f1038838ba9b13fa04"
+    },
+    "deimos_shell": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/deimos_shell.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/deimos_shell_packets.txt",
+      "before_size_bytes": 1522408,
+      "after_size_bytes": 1429274,
+      "before_sha256": "f83b694627b693e57c048064332bafc306db3a75eb31c9c08a75f047372add0b",
+      "after_sha256": "4300b98967a2dfc89dc24a874d74c5c8eddb614fa6179e41a8540bf4f326dcd9"
+    },
+    "deimos_upload": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/deimos_upload.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/deimos_upload_packets.txt",
+      "before_size_bytes": 2227207,
+      "after_size_bytes": 2132428,
+      "before_sha256": "49ff1b7db957e0385567e27df533aa0077c2ead881763a0057dac0da692f87cc",
+      "after_sha256": "87df551c20ffb6aa94fdfaaa4f120c2bcc67e06b69aa195dc43dbc04b02e57ca"
+    },
+    "merlin_download": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/merlin_download.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/merlin_download_packets.txt",
+      "before_size_bytes": 2178606,
+      "after_size_bytes": 2094569,
+      "before_sha256": "a53dd134b31f4b0fab94bec98d4a2f321800d0ea04aebf03f7455843ff9ac6f8",
+      "after_sha256": "beaae8f904979b0f8a0971748e19262334ba7ce31f696c423b503e61389d14d7"
+    },
+    "merlin_keylog": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/merlin_keylog.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/merlin_keylog_packets.txt",
+      "before_size_bytes": 419911,
+      "after_size_bytes": 399582,
+      "before_sha256": "ea3cc5127cd4597dc349931cb829e8e1ee4735f5be079eccec71df40c068287e",
+      "after_sha256": "613dff0deecb6f172125d3f2550ab0904d2d2d3203df20a282dfaeba137d2e00"
+    },
+    "merlin_recon": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/merlin_recon.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/merlin_recon_packets.txt",
+      "before_size_bytes": 406746,
+      "after_size_bytes": 387023,
+      "before_sha256": "f6b11ccc1e306aa2116c58857371ded5a3526d9a9c0b497212c1c115e922d9fe",
+      "after_sha256": "926a7ab240f36d6edb4b24eb3e77de30c1e790891995daa607e79860a8964bb1"
+    },
+    "merlin_screenshot": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/merlin_screenshot.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/merlin_screenshot_packets.txt",
+      "before_size_bytes": 339070,
+      "after_size_bytes": 322847,
+      "before_sha256": "47da9d12fe281a2f8dd32d2c9e361be146ac51e9c2eb7815765bbc99fec58bfa",
+      "after_sha256": "4f950a4e87c4e1d733232e536ee1164c110fe645f10a5842e4893592dffe9055"
+    },
+    "merlin_shell": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/merlin_shell.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/merlin_shell_packets.txt",
+      "before_size_bytes": 1395559,
+      "after_size_bytes": 1313368,
+      "before_sha256": "2a6be4cd7541713b985e1ca2d3c0bd6876b365705449d153175b65a33f461c2d",
+      "after_sha256": "925927527a39d576e4b090b6079546553aa962bef145994a0fdb58ac6dd5e0fb"
+    },
+    "merlin_upload": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/merlin_upload.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/merlin_upload_packets.txt",
+      "before_size_bytes": 2235790,
+      "after_size_bytes": 2154166,
+      "before_sha256": "7d03b5332c82968f5b9b28a34134c5ceabde5b0d97a9f084a9f99ccfe69c9730",
+      "after_sha256": "27656fc16984af1d1fcc56bea5ad7305a77fcd0b5eb86c952f9ca8a539db6b7e"
+    },
+    "sliver_download": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/sliver_download.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/sliver_download_packets.txt",
+      "before_size_bytes": 677004,
+      "after_size_bytes": 645427,
+      "before_sha256": "de21b73eba913986614a8d30eecfb716fed0e0838c8dd72b7842d13af9bb7424",
+      "after_sha256": "8b35f98b0bf27db3750c09027ae54389a8cc988165aa6a25a41b77de48cd681e"
+    },
+    "sliver_keylog": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/sliver_keylog.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/sliver_keylog_packets.txt",
+      "before_size_bytes": 813236,
+      "after_size_bytes": 774840,
+      "before_sha256": "09b416c4206b3b7d77f2aa42b1290a200a6759ce1b88e23562e4cd439be2c31a",
+      "after_sha256": "0f753e18aad7da87b5ddbb1c68d878a6f4b8714db90680e2ddac07777b44314b"
+    },
+    "sliver_recon": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/sliver_recon.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/sliver_recon_packets.txt",
+      "before_size_bytes": 975403,
+      "after_size_bytes": 928395,
+      "before_sha256": "77f3a4cee55e3b25f8d779260007fc0cf3c2c5f3fab6ccda642ce45c79930a4b",
+      "after_sha256": "05dd860f43ade65c3eec5c04b3dabd889b69eeaa91e2048ab2dd9d5b9aeb5b96"
+    },
+    "sliver_screenshot": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/sliver_screenshot.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/sliver_screenshot_packets.txt",
+      "before_size_bytes": 499509,
+      "after_size_bytes": 474760,
+      "before_sha256": "e9b91d6dab2e033f652865045eaf7b291ad7fbcd8d317998a4846d4fcd9130f3",
+      "after_sha256": "d422ae768dd2dd99a89c29cc2e1a3f5136c3f6a5a1a66e6d5882838bc59d7f6c"
+    },
+    "sliver_shell": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/sliver_shell.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/sliver_shell_packets.txt",
+      "before_size_bytes": 587625,
+      "after_size_bytes": 559522,
+      "before_sha256": "ecf74d8e0f4558e9b2ebd4fc693f8564d6f42ad8e09862f2a050dbe90fe532aa",
+      "after_sha256": "eaaf51f33c8cfdf8f12375f4a0c1213eefe55e5518beccfc510a6f753416521c"
+    },
+    "sliver_upload": {
+      "before_file": "preprocessed/v2/hb_cache/8491b3f8d3/before_awm_kws/sliver_upload.txt",
+      "after_file": "preprocessed/v2/awm_cache/bb3f916ba9/after_awm_kws/sliver_upload_packets.txt",
+      "before_size_bytes": 923324,
+      "after_size_bytes": 884231,
+      "before_sha256": "fd558d71770172e37112af950bfa0097d84d94f2edc90489f82b094892cafaea",
+      "after_sha256": "cb57a0a0368c44c93a148ef25d8b66a06245dbbf9207d378d3eaf96eb2c69916"
+    }
+  },
+  "cache_inventory_hash": "613ce53440",
+  "scope_note": "Because the full SQUID corpus is large and the public artifact is intended for lightweight, metadata-minimized reproduction, this demo release includes only the preprocessed token-cache subset required by HFG-QUEST. The packaged cache contains 23,824 flows and excludes raw PCAPs, payloads, IP addresses, ports, and timestamps."
+}
